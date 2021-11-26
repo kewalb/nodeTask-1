@@ -33,7 +33,7 @@ app.get("/showall", (request, response) => {
         <ul>`;
     for (i = 0; i < files.length; i++) {
         console.log(files[i])
-      htmlStr += `<li>${files}</li>`;
+      htmlStr += `<li>${files[i]}</li>`;
     }
     htmlStr += "</ul>";
     response.send(htmlStr);
